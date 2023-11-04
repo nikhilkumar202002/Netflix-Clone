@@ -1,0 +1,363 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+}
+.header-section{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin-top: -100px;
+    /* border: 1px solid white; */
+}
+.background-videos{
+    position: absolute;
+    width: 100%;    
+    height: 700px;
+    overflow: hidden;
+    /* z-index: -2; */
+    
+}
+.video video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    height: 700px;
+    
+}
+.overlay-gradient{
+    position: absolute;
+    /* z-index: 1; */
+    
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, .3) 20%, rgba(63, 61, 61, 0) 100%);
+    overflow: hidden;
+}
+
+/* navbar */
+.hamburger i{
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    display: none;
+    
+}
+.navbar{
+    /* position: absolute; */
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    background-color: transparent;
+}
+.netflix-logo img{
+    width: 150px;
+}
+.left-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.left-nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.list-items a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 200;
+    color: white;
+    padding: 15px;
+    
+}
+.right-nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+}
+.right-list-items a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+}
+.right-list-items{
+    padding: 15px;
+}
+.right-list-items i{
+    color: white;
+}
+.profile i{
+    padding: 8px;
+}
+
+@media (max-width: 720px) {
+
+    .hamburger i{
+        display: block;
+    }
+    .left-nav-list{
+        display: none;
+    }
+    .right-nav{
+        display: none;
+    }
+    
+
+}
+
+/* content */
+
+.content{
+    position: absolute;
+    padding-left: 35px;
+    padding-top: 150px;
+}
+
+.content-frist-line img{
+    width: 30px;
+}
+.content-frist-line p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    padding-left: 8px;
+    letter-spacing: 4px;
+}
+.content-second-line img{
+    width: 45%;
+    padding-left: 10px;
+}
+.content-third-line{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.content-third-line .top-10{
+    padding: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    background-color: #E50914;
+    width: 40px;
+    text-align: center;
+    color: white;
+}
+.content-third-line .top-10 span{
+    font-size: 18px;
+}
+.top-10-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    color: rgba(255, 255, 255);
+    font-size: 20px;
+}
+.content-forth-line{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.content-forth-line p{
+    width: 50%;
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 200;
+}
+.content-button{
+    display: flex;
+    padding-top: 20px;
+}
+.content-play{
+    background-color: white;
+    width: 120px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.content-play a{
+    text-decoration: none;
+    text-decoration: none;
+    color: black;   
+}
+.content-play i{
+    font-size: 20px;
+    padding-right: 10px;
+}
+.content-info{
+    background-color: rgba(175, 175, 175, 0.5);
+    width: 150px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+.content-info a{
+    text-decoration: none;
+    text-decoration: none;
+    color: white;   
+}
+.content-info i{
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+/* gradient lower */
+
+.gradient-lower{
+    width: 100%;
+    height: 200px;
+    /* background-color: black; */
+    background-image: linear-gradient(180deg,transparent,rgba(0, 0, 0, 0.92),black);
+    position: absolute;
+    top: 590px;
+    z-index: 0;
+}
+
+/* movies list */
+
+.movies-list-row-one{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding-left: 50px;
+}
+.row1-headiing p{
+    font-family: 16px;
+    color: white;
+}
+.cardwrapper{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+.cards{
+    position: relative;
+    width: 280px;
+    height: 200px;
+    overflow: hidden;
+}
+.cards img{
+    width: 280px;
+    padding: 4px;
+    transition: transform(450ms);
+    
+}
+.cards img:hover{
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+
+
+/* top 10 movies */
+.top10-movies-cards{
+    display: flex;
+    /* border: 1px solid white; */
+    transition: transform 450ms;
+}
+.left-number{
+    width: 170px;
+    height: 200px;
+    /* border: 1px solid white; */
+    position: absolute;
+    /* object-fit: s; */
+    overflow: hidden;
+    padding-left: 40px;
+}
+.right-movie-image{
+    width: 140px;
+    height: 200px;
+    /* border: 1px solid white; */
+    position: absolute;
+    padding-left: 140px;
+}
+.left-number img{
+    width: 140px;
+    height: 200px;
+    /* object-fit: fill; */
+}
+.right-movie-image img{
+    width: 140px;
+    height: 200px;
+}
+.top10-movies-cards:hover{
+    transform: scale(1.08);
+    transition: .5s;
+}
+
+/* footer */
+
+.footer-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-nav-list{
+    padding: 10px;
+}
+.footer-nav-list a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    opacity: 80%;
+    font-weight: 200;
+}
+.social{
+    display: flex;
+}
+.social-logo{
+    padding: 10px;
+    padding-bottom: 30px;
+}
+.social-logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    opacity: 70%;
+}
+.footer-button{
+    padding-top: 30px;
+}
+.footer-button button a{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+.footer-button button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+}
+.copyright i{
+    color: white;
+    font-size: 12px;
+}
+.copyright p{
+    color: white;
+    font-size: 12px;
+}
+.copyright{
+    padding-top: 30px;
+    opacity: 70%;
+}
+
+/* responsive */
+
+@media (max-width: 720px) {
+    .footer-navbar{
+        display: block;
+    }
+}
